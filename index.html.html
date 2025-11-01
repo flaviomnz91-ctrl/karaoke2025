@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infográfico: Nossa Playlist</title>
+    <!-- Carrega o Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carrega a fonte Inter --><link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* Define a fonte Inter como padrão */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-blue-50 text-gray-800">
+
+    <!-- Container Principal --><div class="container mx-auto max-w-7xl p-6 md:p-12">
+
+
+        <!-- Texto de Introdução --><div class="bg-white p-6 rounded-xl shadow-lg mb-12 text-center">
+            <p class="text-lg md:text-xl font-medium text-gray-700 leading-relaxed">
+                <span class="text-2xl font-bold text-blue-800">🎤 Tudo Pronto para o Karaokê! 🎤</span><br>
+                E aí, cantores! Criei uma lista com uma sugestão de ordem para a nossa cantoria não virar bagunça. 😉<br>
+                A sequência é só um ponto de partida, ok? Podemos mudar tudo na hora, sem estresse! Ainda não tem música? Relaxa! É só escolher a sua preferida quando chegar a sua vez.<br>
+                <span class="text-xl font-bold text-green-700">Vamos com tudo!</span>
+            </p>
+        </div>
+
+        <!-- Painel de Estatísticas --><div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
+            <!-- Card Total de Músicas --><div class="bg-white p-6 rounded-xl shadow-lg flex items-center space-x-4">
+                <!-- Ícone --><div class="bg-blue-100 p-3 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-blue-600">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z" />
+                    </svg>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold">45</div>
+                    <div class="text-gray-500">Músicas na Lista</div>
+                </div>
+            </div>
+            
+            <!-- Card Total de Participantes --><div class="bg-white p-6 rounded-xl shadow-lg flex items-center space-x-4">
+                <!-- Ícone --><div class="bg-green-100 p-3 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-green-600">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m-4.682 2.72a.75.75 0 01-1.06 0l-1.92-1.92a.75.75 0 011.06-1.06l1.92 1.92a.75.75 0 010 1.06zM18 18.72a9.094 9.094 0 01-3.741-.479 3 3 0 01-4.682-2.72m-4.682 2.72c.52.52.52 1.365 0 1.885l-1.92 1.92a.75.75 0 01-1.06-1.06l1.92-1.92a.75.75 0 011.06 0zm1.92-1.92a9.094 9.094 0 00-3.741-.479 3 3 0 00-4.682-2.72m4.682 2.72c-.52.52-.52 1.365 0 1.885l1.92 1.92a.75.75 0 001.06-1.06l-1.92-1.92a.75.75 0 00-1.06 0z" />
+                    </svg>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold">7</div>
+                    <div class="text-gray-500">Participantes</div>
+                </div>
+            </div>
+
+            <!-- Card Músicas Pendentes --><div class="bg-white p-6 rounded-xl shadow-lg flex items-center space-x-4">
+                <!-- Ícone --><div class="bg-yellow-100 p-3 rounded-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-yellow-600">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
+                    </svg>
+                </div>
+                <div>
+                    <div class="text-3xl font-bold">17</div>
+                    <div class="text-gray-500">Músicas Pendentes</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Título da Seção --><h2 class="text-3xl font-bold text-center mb-8 text-blue-900">Quem Pediu O Quê?</h2>
+
+        <!-- Grid de Pessoas --><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            
+            <!-- Card Pessoa: Antônio --><div class="bg-white rounded-xl shadow-lg p-6 flex flex-col h-full">
+                <div class="flex items-center mb-4">
+                    <div class="bg-red-100 p-2 rounded-full mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-red-600"><path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-red-800">Antônio (5 Músicas)</h3>
+                </div>
+                <ul class="space-y-3 text-sm flex-1">
+                    <li class="flex items-start"><span class="mr-2 mt-1.5">🎵</span>Evidências - Chitãozinho & Xororó (Sertanejo Clássico)</li>
+                    <li class="flex items-start"><span class="mr-2 mt-1.5">🎵</span>Você não me ensinou a te esquecer (versão Bruno e Marrone)</li>
+                    <li class="flex items-start"><span class="mr-2 mt-1.5">🎵</span>10 anos (Gustavo Lima)</li>
+                    <li class="flex items-start"><span class="mr-2 mt-1.5">🎵</span>Creep (Radiohead)</li>
+                    <li class="flex items-start"><span class="mr-2 mt-1.5">🎵</span>Sem Ar - D'Black</li>
+                </ul>
+            </div>
+
+            <!-- Card Pessoa: Fabi --><div class="bg-white rounded-xl shadow-lg p-6 flex flex-col h-full">
+                <div class="flex items-center mb-4">
+                    <div class="bg-purple-100 p-2 rounded-full mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-purple-600"><path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-purple-800">Fabi (5 Músicas)</h3>
+                </div>
+                <ul class="space-y-3 text-sm flex-1">
+                    <li class="flex items-start"><span class="mr-2 mt-1.5">🎵</span>Vanessa da Mata - Amado</li>
+                    <li class="flex items-start"><span class="mr-2 mt-1.5">🎵</span>Zezé Di Camargo - Sem medo de ser feliz</li>
+                    <li class="flex items-start"><span class="mr-2 mt-1.5">🎵</span>Daniel - Estou apaixonado</li>
+                    <li class="flex items-start"><span class="mr-2 mt-1.5">🎵</span>Alexandre Pires - Essa tal liberdade</li>
+                    <li class="flex items-start"><span class="mr-2 mt-1.5">🎵</span>Leonardo - Meu mel</li>
+                </ul>
+            </div>
+
+            <!-- Card Pessoa: Flávio --><div class="bg-white rounded-xl shadow-lg p-6 flex flex-col h-full">
+                <div class="flex items-center mb-4">
+                    <div class="bg-indigo-100 p-2 rounded-full mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-indigo-600"><path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-indigo-800">Flávio (8 Músicas)</h3>
+                </div>
+                <ul class="space-y-3 text-sm flex-1">
+                    <li class="flex items-start"><span class="mr-2 mt-1.5">🎵</span>Tempo Perdido - Legião Urbana (Rock Nacional)</li>
+                    <li class="flex items-start"><span class="mr-2 mt-1.5">🎵</span>Backstreet Boys - I Want It That Way</li>
+                    <li class="flex items-start"><span class="mr-2 mt-1.5">🎵</span>Amo Noite e Dia - Jorge & Mateus (Sertanejo Universitário)</li>
+                    <li class="flex items-start"><span class="mr-2 mt-1.5">🎵</span>Victor & Leo - Borboletas</li>
+                    <li class="flex items-start"><span class="mr-2 mt-1.5">🎵</span>Iris - Goo Goo Dolls</li>
+                    <li class="flex items-start"><span class="mr-2 mt-1.5">🎵</span>Henrique & Diego - 5h da Manhã</li>
+                    <li class="flex items-start"><span class="mr-2 mt-1.5">🎵</span>Gusttavo Lima - 60 segundos</li>
+                    <li class="flex items-start"><span class="mr-2 mt-1.5">🎵</span>Backstreet Boys - I Want It That Way</li>
+                </ul>
+            </div>
+
+            <!-- Card Pessoa: Melissa --><div class="bg-white rounded-xl shadow-lg p-6 flex flex-col h-full">
+                <div class="flex items-center mb-4">
+                    <div class="bg-pink-100 p-2 rounded-full mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-pink-600"><path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-pink-800">Melissa (6 Músicas)</h3>
+                </div>
+                <ul class="space-y-3 text-sm flex-1">
+                    <li class="flex items-start"><span class="mr-2 mt-1.5">🎵</span>Wherever You Will Go (The Calling)</li>
+                    <li class="flex items-start"><span class="mr-2 mt-1.5">🎵</span>Perfect - Simple Plan</li>
+                    <li class="flex items-start"><span class="mr-2 mt-1.5">🎵</span>Rouge - Um Anjo Veio Me Falar</li>
+                    <li class="flex items-start"><span class="mr-2 mt-1.5">🎵</span>É por você que canto - Leandro & Leonardo</li>
+                    <li class="flex items-start"><span class="mr-2 mt-1.5">🎵</span>Fico assim sem você - Claudinho e Buchecha</li>
+                    <li class="flex items-start"><span class="mr-2 mt-1.5">🎵</span>Na sua estante - Pitty</li>
+                </ul>
+            </div>
+
+            <!-- Card Pessoa: Henrique --><div class="bg-white rounded-xl shadow-lg p-6 flex flex-col h-full">
+                <div class="flex items-center mb-4">
+                    <div class="bg-yellow-100 p-2 rounded-full mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-yellow-600"><path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-yellow-800">Henrique (8 Músicas)</h3>
+                </div>
+                <ul class="space-y-3 text-sm flex-1">
+                    <li class="flex items-start"><span class="mr-2 mt-1.5">🎵</span>Insegurança- pixote</li>
+                    <li class="flex items-start"><span class="mr-2 mt-1.5">🎵</span>Cerveja de garrafa -atitude 67</li>
+                    <li class="flex items-start"><span class="mr-2 mt-1.5">🎵</span>Só rezo -NXZero</li>
+                    <li class="flex items-start"><span class="mr-2 mt-1.5">🎵</span>Your man- joshturner</li>
+                    <li class="flex items-start"><span class="mr-2 mt-1.5">🎵</span>Só dá vc na minha vida -daniel</li>
+                    <li class="flex items-start"><span class="mr-2 mt-1.5">🎵</span>Final de tarde - Péricles</li>
+                    <li class="flex items-start"><span class="mr-2 mt-1.5">🎵</span>Perfume - belo</li>
+                    <li class="flex items-start"><span class="mr-2 mt-1.5">🎵</span>Caso indefinido - Cristiano Araújo</li>
+                </ul>
+            </div>
+
+            <!-- Card Pessoa: Johnatan --><div class="bg-white rounded-xl shadow-lg p-6 flex flex-col h-full">
+                <div class="flex items-center mb-4">
+                    <div class="bg-teal-100 p-2 rounded-full mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-teal-600"><path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-teal-800">Johnatan (7 Músicas)</h3>
+                </div>
+                <ul class="space-y-3 text-sm flex-1">
+                    <li class="flex items-start text-gray-400 italic"><span class="mr-2 mt-1.5">🕒</span>[Música em aberto]</li>
+                    <li class="flex items-start text-gray-400 italic"><span class="mr-2 mt-1.5">🕒</span>[Música em aberto]</li>
+                    <li class="flex items-start text-gray-400 italic"><span class="mr-2 mt-1.5">🕒</span>[Música em aberto]</li>
+                    <li class="flex items-start text-gray-400 italic"><span class="mr-2 mt-1.5">🕒</span>[Música em aberto]</li>
+                    <li class="flex items-start text-gray-400 italic"><span class="mr-2 mt-1.5">🕒</span>[Música em aberto]</li>
+                    <li class="flex items-start text-gray-400 italic"><span class="mr-2 mt-1.5">🕒</span>[Música em aberto]</li>
+                    <li class="flex items-start text-gray-400 italic"><span class="mr-2 mt-1.5">🕒</span>[Música em aberto]</li>
+                </ul>
+            </div>
+
+            <!-- Card Pessoa: Nany --><div class="bg-white rounded-xl shadow-lg p-6 flex flex-col h-full">
+                <div class="flex items-center mb-4">
+                    <div class="bg-orange-100 p-2 rounded-full mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-orange-600"><path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-orange-800">Nany (5 Músicas)</h3>
+                </div>
+                <ul class="space-y-3 text-sm flex-1">
+                    <li class="flex items-start text-gray-400 italic"><span class="mr-2 mt-1.5">🕒</span>[Música em aberto]</li>
+                    <li class="flex items-start text-gray-400 italic"><span class="mr-2 mt-1.5">🕒</span>[Música em aberto]</li>
+                    <li class="flex items-start text-gray-400 italic"><span class="mr-2 mt-1.5">🕒</span>[Música em aberto]</li>
+                    <li class="flex items-start text-gray-400 italic"><span class="mr-2 mt-1.5">🕒</span>[Música em aberto]</li>
+                    <li class="flex items-start text-gray-400 italic"><span class="mr-2 mt-1.5">🕒</span>[Música em aberto]</li>
+                </ul>
+            </div>
+
+            <!-- Card Pessoa: Priscila --><div class="bg-white rounded-xl shadow-lg p-6 flex flex-col h-full">
+                <div class="flex items-center mb-4">
+                    <div class="bg-cyan-100 p-2 rounded-full mr-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-cyan-600"><path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-cyan-800">Priscila (4 Músicas)</h3>
+                </div>
+                <ul class="space-y-3 text-sm flex-1">
+                    <li class="flex items-start"><span class="mr-2 mt-1.5">🎵</span>Luka - Tô nem aí</li>
+                    <li class="flex items-start text-gray-400 italic"><span class="mr-2 mt-1.5">🕒</span>[Música em aberto]</li>
+                    <li class="flex items-start text-gray-400 italic"><span class="mr-2 mt-1.5">🕒</span>[Música em aberto]</li>
+                    <li class="flex items-start text-gray-400 italic"><span class="mr-2 mt-1.5">🕒</span>[Música em aberto]</li>
+                </ul>
+            </div>
+            
+        </div>
+
+    </div>
+
+</body>
+</html>
+
